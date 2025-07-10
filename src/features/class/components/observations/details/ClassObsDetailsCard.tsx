@@ -10,7 +10,7 @@ type ClassObsModalListItemProps = {
   favorite?: boolean
 }
 
-export default function ClassObsModalListItem({
+export default function ClassObsDetailsListItem({
   id,
   observation,
   favorite,

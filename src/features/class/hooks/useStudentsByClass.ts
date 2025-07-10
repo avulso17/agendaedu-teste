@@ -1,12 +1,12 @@
 import { useQuery } from '@tanstack/react-query'
 import { getStudentsByClassId } from '../api/getStudentsByClassId'
 
-export const useStudentsByClass = (classId: string) => {
-  const id = Number(classId)
+export const useStudentsByClass = (id: string) => {
+  const classId = Number(id)
 
   return useQuery({
-    queryKey: ['students', id],
-    queryFn: () => getStudentsByClassId({ classId: id }),
-    enabled: !!id,
+    queryKey: ['students', classId],
+    queryFn: () => getStudentsByClassId({ classId: classId }),
+    enabled: !!classId,
   })
 }

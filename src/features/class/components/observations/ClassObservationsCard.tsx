@@ -19,7 +19,7 @@ export default function ClassObservationsCard({
   const router = useRouter()
 
   const handleOpenObservations = () => {
-    router.push(`/student/observations/modal`)
+    router.push(`/observations-details`)
   }
 
   return (

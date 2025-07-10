@@ -4,7 +4,7 @@ import { useRouter } from 'expo-router'
 import { Text, TouchableOpacity, View } from 'react-native'
 
 type DiaryClassCardProps = {
-  id: number
+  id: string
   name: string
   period: string
   studentsAmount: number

@@ -1,5 +1,5 @@
 export type Class = {
-  id: number
+  id: string
   name: string
   period: string
   studentsCount: number

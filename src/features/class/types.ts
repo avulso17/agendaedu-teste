@@ -1,17 +1,17 @@
 export type Observation = {
-  id: number
+  id: string
   text: string
   favorite: boolean
 }
 
 export type Student = {
-  id: number
+  id: string
   name: string
-  classId: number
+  classId: string
   imgSrc: string
   observations: Observation[]
 }
 
 export type GetStudentsProps = {
-  classId: number
+  classId: string
 }

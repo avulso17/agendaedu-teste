@@ -10,16 +10,7 @@ export default function RootLayout() {
         screenOptions={{
           headerShown: false,
         }}
-      >
-        <Stack.Screen
-          name='student/observations/modal'
-          options={{ presentation: 'modal' }}
-        />
-        <Stack.Screen
-          name='student/observations/modal/[id]'
-          options={{ presentation: 'modal' }}
-        />
-      </Stack>
+      ></Stack>
     </Providers>
   )
 }
