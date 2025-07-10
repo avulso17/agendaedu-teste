@@ -9,7 +9,7 @@ import {
   View,
   ViewStyle,
 } from 'react-native'
-import { cn } from '../utils/cn'
+import { cn } from '../lib/cn'
 
 interface InputTextProps extends TextInputProps {
   label?: string

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, ImageStyle, StyleProp, View } from 'react-native'
-import { cn } from '../utils/cn'
+import { cn } from '../lib/cn'
 
 type AvatarSize = 'sm' | 'md' | 'lg'
 type AvatarShape = 'circle' | 'square'

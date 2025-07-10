@@ -1,14 +1,12 @@
+import ClassContent from '@/features/diary/components/ClassContent'
+import ClassHeader from '@/features/diary/components/ClassHeader'
 import { View } from 'react-native'
-import ClassDatePanel from './ClassDatePanel'
-import ClassNavigationBar from './ClassNavigationBar'
-import ClassTabsPanel from './ClassTabsPanel'
 
 export default function ClassScreen() {
   return (
     <View className='flex-1'>
-      <ClassNavigationBar />
-      <ClassDatePanel />
-      <ClassTabsPanel />
+      <ClassHeader />
+      <ClassContent />
     </View>
   )
 }

@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   ViewStyle,
 } from 'react-native'
-import { cn } from '../utils/cn'
+import { cn } from '../lib/cn'
 
 type ButtonVariant = 'colorful' | 'outline' | 'text'
 type ButtonSize = 'sm' | 'md' | 'lg'

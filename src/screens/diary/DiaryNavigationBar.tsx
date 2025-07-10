@@ -1,5 +1,5 @@
-import IconButton from '@/src/components/IconButton'
-import { COLORS } from '@/src/styles/colors'
+import IconButton from '@/components/IconButton'
+import { COLORS } from '@/styles/colors'
 import FeatherIcon from '@react-native-vector-icons/feather'
 import { Text, View } from 'react-native'
 

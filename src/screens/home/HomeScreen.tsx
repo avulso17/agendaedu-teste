@@ -1,6 +1,6 @@
-import Avatar from '@/src/components/Avatar'
-import BottomNav from '@/src/components/BottomNav/Index'
-import { COLORS } from '@/src/styles/colors'
+import Avatar from '@/components/Avatar'
+import BottomNav from '@/components/BottomNav/Index'
+import { COLORS } from '@/styles/colors'
 import LucideIcon from '@react-native-vector-icons/lucide'
 import { Text, View } from 'react-native'
 import HomeNavButton from './HomeNavButton'
@@ -26,10 +26,12 @@ export default function HomeScreen() {
 
       <View className='flex-row gap-12 justify-center'>
         <HomeNavButton
+          href='/class'
           title='Diário'
           icon={<LucideIcon name='notebook' size={24} color={COLORS.primary} />}
         />
         <HomeNavButton
+          disabled
           title='Mensagens'
           icon={
             <LucideIcon

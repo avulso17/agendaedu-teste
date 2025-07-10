@@ -1,4 +1,4 @@
-import { COLORS } from '@/src/styles/colors'
+import { COLORS } from '@/styles/colors'
 import FeatherIcon from '@react-native-vector-icons/feather'
 
 export const BOTTOM_NAV_CONFIG = [

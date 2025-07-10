@@ -1,5 +1,5 @@
-import Button from '@/src/components/Button'
-import InputText from '@/src/components/InputText'
+import Button from '@/components/Button'
+import InputText from '@/components/InputText'
 import { KeyboardAvoidingView, Platform, Text, View } from 'react-native'
 
 export default function LoginScreen() {

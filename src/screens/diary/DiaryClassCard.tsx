@@ -1,4 +1,4 @@
-import Card from '@/src/components/Card'
+import Card from '@/components/Card'
 import FeatherIcon from '@react-native-vector-icons/feather'
 import { Text, TouchableOpacity, View } from 'react-native'
 
@@ -13,7 +13,7 @@ export default function DiaryClassCard({
 }: DiaryClassCardProps) {
   return (
     <TouchableOpacity activeOpacity={0.7}>
-      <Card className='flex-row items-center justify-between'>
+      <Card className='flex-row items-center justify-between mb-4'>
         <View className='gap-1'>
           <Text className='text-base text-dark font-semibold'>{title}</Text>
           <Text className='text-base text-black/60'>

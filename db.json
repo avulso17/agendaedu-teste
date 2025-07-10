@@ -1,0 +1,27 @@
+{
+  "profile": {
+    "id": "1923h1239",
+    "nickname": "Felipe Mateus"
+  },
+  "students": [
+    {
+      "id": 1,
+      "name": "João Silva",
+      "observations": [
+        {
+          "id": 1,
+          "text": "Precisa melhorar em matemática",
+          "favorite": false
+        },
+        { "id": 2, "text": "Muito participativo nas aulas", "favorite": true }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ana Souza",
+      "observations": [
+        { "id": 1, "text": "Leitura excelente", "favorite": true }
+      ]
+    }
+  ]
+}

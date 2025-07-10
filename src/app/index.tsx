@@ -1,10 +1,5 @@
-import SafeAreaContainerView from '../components/SafeAreaContainerView'
-import ClassScreen from '../screens/class/ClassScreen'
+import HomeScreen from '@/screens/home/HomeScreen'
 
 export default function Index() {
-  return (
-    <SafeAreaContainerView>
-      <ClassScreen />
-    </SafeAreaContainerView>
-  )
+  return <HomeScreen />
 }

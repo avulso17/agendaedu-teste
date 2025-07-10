@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleProp, TouchableOpacity, View, ViewStyle } from 'react-native'
-import { cn } from '../utils/cn'
+import { cn } from '../lib/cn'
 
 type IconButtonSize = 'sm' | 'md' | 'lg'
 type IconButtonShape = 'circle' | 'square'
