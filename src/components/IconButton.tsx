@@ -1,5 +1,5 @@
 import React from 'react'
-import { Pressable, StyleProp, View, ViewStyle } from 'react-native'
+import { StyleProp, TouchableOpacity, View, ViewStyle } from 'react-native'
 import { cn } from '../utils/cn'
 
 type IconButtonSize = 'sm' | 'md' | 'lg'
@@ -30,14 +30,14 @@ const shapeClassMap: Record<IconButtonShape, string> = {
 
 const variantClassMap: Record<IconButtonVariant, string> = {
   primary: 'bg-primary',
-  ghost: 'bg-transparent border border-grey-200',
+  ghost: 'bg-transparent',
 }
 
 const IconButton: React.FC<IconButtonProps> = ({
   icon,
   onPress,
   size = 'md',
-  shape = 'circle',
+  shape = 'square',
   variant = 'primary',
   style,
   className = '',
@@ -48,7 +48,8 @@ const IconButton: React.FC<IconButtonProps> = ({
   const variantClass = variantClassMap[variant]
 
   return (
-    <Pressable
+    <TouchableOpacity
+      activeOpacity={0.7}
       onPress={onPress}
       disabled={disabled}
       className={cn(
@@ -56,13 +57,15 @@ const IconButton: React.FC<IconButtonProps> = ({
         sizeClass,
         shapeClass,
         variantClass,
-        disabled ? 'opacity-50' : '',
-        className
+        className,
+        {
+          'opacity-50': disabled,
+        }
       )}
       style={style}
     >
       <View pointerEvents='none'>{icon}</View>
-    </Pressable>
+    </TouchableOpacity>
   )
 }
 

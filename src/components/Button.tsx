@@ -1,5 +1,11 @@
 import React from 'react'
-import { Pressable, StyleProp, Text, TextStyle, ViewStyle } from 'react-native'
+import {
+  StyleProp,
+  Text,
+  TextStyle,
+  TouchableOpacity,
+  ViewStyle,
+} from 'react-native'
 import { cn } from '../utils/cn'
 
 type ButtonVariant = 'colorful' | 'outline' | 'text'
@@ -63,7 +69,8 @@ const Button: React.FC<ButtonProps> = ({
   const { button: sizeButton, text: sizeText } = sizeStyles[size]
 
   return (
-    <Pressable
+    <TouchableOpacity
+      activeOpacity={0.7}
       onPress={onPress}
       disabled={disabled}
       className={cn(
@@ -80,7 +87,7 @@ const Button: React.FC<ButtonProps> = ({
       >
         {title}
       </Text>
-    </Pressable>
+    </TouchableOpacity>
   )
 }
 

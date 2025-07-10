@@ -1,5 +1,10 @@
-import HomeScreen from '../screens/home/HomeScreen'
+import SafeAreaContainerView from '../components/SafeAreaContainerView'
+import DiaryScreen from '../screens/diary/DiaryScreen'
 
 export default function Index() {
-  return <HomeScreen />
+  return (
+    <SafeAreaContainerView>
+      <DiaryScreen />
+    </SafeAreaContainerView>
+  )
 }

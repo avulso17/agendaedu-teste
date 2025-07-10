@@ -1,4 +1,4 @@
-import Avatar from '@/src/components/Avata'
+import Avatar from '@/src/components/Avatar'
 import BottomNav from '@/src/components/BottomNav/Index'
 import { COLORS } from '@/src/styles/colors'
 import LucideIcon from '@react-native-vector-icons/lucide'
