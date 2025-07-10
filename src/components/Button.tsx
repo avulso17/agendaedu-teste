@@ -12,8 +12,7 @@ type ButtonVariant = 'colorful' | 'outline' | 'text'
 type ButtonSize = 'sm' | 'md' | 'lg'
 
 interface ButtonProps {
-  title: string
-  onPress: () => void
+  onPress?: () => void
   variant?: ButtonVariant
   size?: ButtonSize
   disabled?: boolean
@@ -21,20 +20,21 @@ interface ButtonProps {
   textStyle?: StyleProp<TextStyle>
   className?: string
   textClassName?: string
+  children?: React.ReactNode
 }
 
 const variantStyles: Record<ButtonVariant, { button: string; text: string }> = {
   colorful: {
-    button: 'bg-primary rounded-xl justify-center items-center',
+    button: 'bg-primary rounded-lg justify-center items-center',
     text: 'text-white font-semibold',
   },
   outline: {
     button:
-      'border-2 border-primary rounded-xl justify-center items-center bg-transparent',
+      'border-2 border-primary rounded-lg justify-center items-center bg-transparent',
     text: 'text-primary font-semibold',
   },
   text: {
-    button: 'bg-transparent justify-center items-center',
+    button: 'bg-transparent rounded-lg justify-center items-center',
     text: 'text-primary font-semibold',
   },
 }
@@ -55,7 +55,6 @@ const sizeStyles: Record<ButtonSize, { button: string; text: string }> = {
 }
 
 const Button: React.FC<ButtonProps> = ({
-  title,
   onPress,
   variant = 'colorful',
   size = 'md',
@@ -64,6 +63,7 @@ const Button: React.FC<ButtonProps> = ({
   textStyle,
   className,
   textClassName,
+  children,
 }) => {
   const { button: variantButton, text: variantText } = variantStyles[variant]
   const { button: sizeButton, text: sizeText } = sizeStyles[size]
@@ -85,7 +85,7 @@ const Button: React.FC<ButtonProps> = ({
         className={cn(variantText, sizeText, textClassName)}
         style={textStyle}
       >
-        {title}
+        {children}
       </Text>
     </TouchableOpacity>
   )

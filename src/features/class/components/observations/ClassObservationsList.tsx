@@ -9,8 +9,6 @@ export default function ClassObservationsList() {
   const queryClient = useQueryClient()
   const students = queryClient.getQueryData<Student[]>(['students', Number(id)])
 
-  console.log(students)
-
   if (!students)
     return <Text className='text-center pt-5'>Ops... Algo deu errado</Text>
 
@@ -18,7 +16,7 @@ export default function ClassObservationsList() {
     <FlatList
       data={students}
       renderItem={({ item }) => (
-        <ClassObservationsCard name={item.name} imgSrc={{ uri: item.imgUrl }} />
+        <ClassObservationsCard name={item.name} imgSrc={item.imgSrc} />
       )}
       className='gap-4 pt-5 px-4'
     />

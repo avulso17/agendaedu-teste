@@ -17,13 +17,10 @@ export default function LoginScreen() {
         </View>
 
         <View className='mt-auto pb-5 gap-2'>
-          <Button title='Log In' size='lg' onPress={() => {}} />
-          <Button
-            title='Forgot your password?'
-            size='lg'
-            variant='text'
-            onPress={() => {}}
-          />
+          <Button size='lg'>Log In</Button>
+          <Button size='lg' variant='text'>
+            Forgot your password?
+          </Button>
         </View>
       </View>
     </KeyboardAvoidingView>

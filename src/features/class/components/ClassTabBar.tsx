@@ -9,7 +9,7 @@ type Props = {
 
 export const ClassTabBar = ({ navigationState, jumpTo }: Props) => {
   return (
-    <View className='flex-row bg-light border-b border-grey-400/25'>
+    <View className='flex-row border-b border-grey-400/25'>
       {navigationState.routes.map((route, idx) => {
         const isActive = navigationState.index === idx
 

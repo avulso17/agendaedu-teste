@@ -30,7 +30,7 @@ const shapeClassMap: Record<IconButtonShape, string> = {
 
 const variantClassMap: Record<IconButtonVariant, string> = {
   primary: 'bg-primary',
-  ghost: 'bg-grey-100/80',
+  ghost: 'bg-transparent',
 }
 
 const IconButton: React.FC<IconButtonProps> = ({

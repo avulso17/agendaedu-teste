@@ -8,7 +8,7 @@ export type Student = {
   id: number
   name: string
   classId: number
-  imgUrl: string
+  imgSrc: string
   observations: Observation[]
 }
 

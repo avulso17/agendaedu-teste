@@ -23,12 +23,6 @@
       "name": "Infantil III",
       "period": "Manhã",
       "studentsCount": 12
-    },
-    {
-      "id": 4,
-      "name": "Infantil I",
-      "period": "Tarde",
-      "studentsCount": 11
     }
   ],
   "students": [
