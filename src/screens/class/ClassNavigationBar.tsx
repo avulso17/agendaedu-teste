@@ -3,7 +3,7 @@ import { COLORS } from '@/src/styles/colors'
 import FeatherIcon from '@react-native-vector-icons/feather'
 import { Text, View } from 'react-native'
 
-export default function DiaryNavigationBar() {
+export default function ClassNavigationBar() {
   return (
     <View className='flex-row items-center p-2 mb-4'>
       <IconButton
@@ -11,7 +11,10 @@ export default function DiaryNavigationBar() {
         variant='ghost'
         icon={<FeatherIcon name='arrow-left' size={24} color={COLORS.dark} />}
       />
-      <Text className='flex-1 text-base font-semibold'>Diário</Text>
+      <View className='flex-1'>
+        <Text className='text-sm text-black/60'>Infantil I - Manhã</Text>
+        <Text className='text-base font-semibold'>Diário</Text>
+      </View>
 
       <View className='flex-row gap-1'>
         <IconButton
@@ -19,13 +22,10 @@ export default function DiaryNavigationBar() {
           variant='ghost'
         />
         <IconButton
-          icon={<FeatherIcon name='filter' size={24} color={COLORS.dark} />}
+          icon={
+            <FeatherIcon name='more-horizontal' size={24} color={COLORS.dark} />
+          }
           variant='ghost'
-        />
-        <IconButton
-          icon={<FeatherIcon name='calendar' size={24} color={COLORS.dark} />}
-          variant='ghost'
-          disabled
         />
       </View>
     </View>
