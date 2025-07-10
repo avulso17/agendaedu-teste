@@ -1,6 +1,6 @@
 import { SafeAreaView } from 'react-native'
 import ClassDatePanel from './ClassDatePanel'
-import ClassNavigationBar from './ClassNavigationBar'
+import ClassNavigationBar from './navigationBar/'
 
 export default function ClassHeader() {
   return (

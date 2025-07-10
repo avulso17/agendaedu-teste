@@ -2,7 +2,7 @@ import api from '@/lib/api'
 import { Student } from '../types'
 
 type GetStudentsProps = {
-  id: string
+  id: number
 }
 
 export async function getStudentsById({

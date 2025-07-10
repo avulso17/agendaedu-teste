@@ -1,11 +1,6 @@
-export type Observation = {
-  id: number
-  text: string
-  favorite: boolean
-}
-
-export type Student = {
+export type Class = {
   id: number
   name: string
-  observations: Observation[]
+  period: string
+  studentsCount: number
 }

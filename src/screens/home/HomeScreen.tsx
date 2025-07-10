@@ -26,7 +26,7 @@ export default function HomeScreen() {
 
       <View className='flex-row gap-12 justify-center'>
         <HomeNavButton
-          href='/class'
+          href='/diary'
           title='Diário'
           icon={<LucideIcon name='notebook' size={24} color={COLORS.primary} />}
         />

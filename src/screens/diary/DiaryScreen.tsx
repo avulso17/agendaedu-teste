@@ -1,6 +1,6 @@
+import DiaryClassList from '@/features/diary/components/DiaryClassList'
+import DiaryNavigationBar from '@/features/diary/components/DiaryNavigationBar'
 import { SafeAreaView, View } from 'react-native'
-import DiaryClassList from './DiaryClassList'
-import DiaryNavigationBar from './DiaryNavigationBar'
 
 export default function DiaryScreen() {
   return (
