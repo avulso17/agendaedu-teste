@@ -3,10 +3,8 @@
     "id": "1",
     "name": "Prof. Carlos",
     "email": "carlos@escola.com",
-    "classIds": [
-      "1",
-      "3"
-    ]
+    "imgUrl": "https://i.pravatar.cc/300?img=49",
+    "classIds": ["1", "3"]
   },
   "classes": [
     {

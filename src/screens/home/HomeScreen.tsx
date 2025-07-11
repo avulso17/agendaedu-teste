@@ -1,9 +1,9 @@
 import Avatar from '@/components/Avatar'
 import BottomNav from '@/components/BottomNav/Index'
+import HomeNavButton from '@/features/home/components/HomeNavButton'
 import { COLORS } from '@/styles/colors'
 import LucideIcon from '@react-native-vector-icons/lucide'
 import { Text, View } from 'react-native'
-import HomeNavButton from './HomeNavButton'
 
 export default function HomeScreen() {
   return (
@@ -11,7 +11,7 @@ export default function HomeScreen() {
       <View className='bg-primary h-[15.375rem] mb-16 relative z-10'>
         <Avatar
           className='mt-auto mx-auto -mb-12 h-40 w-40 shadow-[0px_4px_20px_0px] shadow-gray-500/20'
-          source={{ uri: 'https://i.pravatar.cc/300' }}
+          source={{ uri: 'https://i.pravatar.cc/300?img=49' }}
         />
       </View>
 
