@@ -4,8 +4,8 @@ import { useStudentsByClass } from '../hooks/useStudentsByClass'
 import ClassTabView from './ClassTabView'
 
 export default function ClassContent() {
-  const { id } = useLocalSearchParams<{ id: string }>()
-  const { isLoading, error } = useStudentsByClass(id)
+  const { classId } = useLocalSearchParams<{ classId: string }>()
+  const { isLoading, error } = useStudentsByClass(classId)
 
   if (isLoading)
     return (

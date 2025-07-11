@@ -1,11 +1,11 @@
 import Empty from '@/components/Empty'
+import { useLocalSearchParams } from 'expo-router'
 import { FlatList, Text } from 'react-native'
 import { useGetObservations } from '../hooks/useFetchObservations'
 import ObsDetailsCard from './ObsDetailsCard'
 
 export default function ObsDetailsList() {
-  // const { id } = useLocalSearchParams<{ id: string }>()
-  const studentId = '1'
+  const { studentId } = useLocalSearchParams<{ studentId: string }>()
   const { data, isLoading, error } = useGetObservations(studentId)
 
   if (isLoading) return <Text className='text-center pt-5'>Carregando...</Text>

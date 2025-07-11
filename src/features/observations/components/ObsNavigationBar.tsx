@@ -3,7 +3,7 @@ import IconButton from '@/components/IconButton'
 import { COLORS } from '@/styles/colors'
 import { Feather } from '@expo/vector-icons'
 import { SafeAreaView, Text, View } from 'react-native'
-import { useCreateObservation } from '../../hooks/useCreateObservation'
+import { useCreateObservation } from '../hooks/useCreateObservation'
 
 export default function ObsNavigationBar() {
   const createObservation = useCreateObservation('1')

@@ -8,18 +8,20 @@ import { useRouter } from 'expo-router'
 import { Text, View } from 'react-native'
 
 type ClassObservationsCardProps = {
+  studentId: string
   name: string | undefined
   imgSrc?: string
 }
 
 export default function ClassObservationsCard({
+  studentId,
   name,
   imgSrc,
 }: ClassObservationsCardProps) {
   const router = useRouter()
 
   const handleOpenObservations = () => {
-    router.push(`/observations-details`)
+    router.push(`/observations/${studentId}`)
   }
 
   return (

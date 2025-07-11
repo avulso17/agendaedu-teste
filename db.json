@@ -33,158 +33,72 @@
       "id": "1",
       "name": "João Silva",
       "classId": "1",
-      "imgSrc": "https://i.pravatar.cc/300",
-      "observations": [
-        {
-          "id": "1",
-          "text": "Precisa melhorar em matemática.",
-          "favorite": false
-        },
-        {
-          "id": "2",
-          "text": "Muito participativo nas aulas de história.",
-          "favorite": true
-        }
-      ]
+      "imgSrc": "https://i.pravatar.cc/300"
     },
     {
       "id": "2",
       "name": "Ana Souza",
       "classId": "2",
-      "imgSrc": "https://i.pravatar.cc/300",
-      "observations": [
-        {
-          "id": "1",
-          "text": "Leitura excelente e vocabulário rico.",
-          "favorite": true
-        }
-      ]
+      "imgSrc": "https://i.pravatar.cc/300"
     },
     {
       "id": "3",
       "name": "Pedro Costa",
       "classId": "1",
-      "imgSrc": "https://i.pravatar.cc/300",
-      "observations": [
-        {
-          "id": "1",
-          "text": "Demonstra grande potencial em artes.",
-          "favorite": true
-        },
-        {
-          "id": "2",
-          "text": "Conversa excessivamente durante as explicações.",
-          "favorite": false
-        }
-      ]
+      "imgSrc": "https://i.pravatar.cc/300"
     },
     {
       "id": "4",
       "name": "Mariana Oliveira",
       "classId": "3",
-      "imgSrc": "https://i.pravatar.cc/300",
-      "observations": []
+      "imgSrc": "https://i.pravatar.cc/300"
     },
     {
       "id": "5",
       "name": "Lucas Pereira",
       "classId": "3",
-      "imgSrc": "https://i.pravatar.cc/300",
-      "observations": [
-        {
-          "id": "1",
-          "text": "Excelente raciocínio lógico.",
-          "favorite": true
-        }
-      ]
+      "imgSrc": "https://i.pravatar.cc/300"
     },
     {
       "id": "6",
       "name": "Juliana Santos",
       "classId": "1",
-      "imgSrc": "https://i.pravatar.cc/300",
-      "observations": [
-        {
-          "id": "1",
-          "text": "Apresenta dificuldade na conjugação de verbos.",
-          "favorite": false
-        }
-      ]
+      "imgSrc": "https://i.pravatar.cc/300"
     },
     {
       "id": "7",
       "name": "Gabriel Rodrigues",
       "classId": "2",
-      "imgSrc": "https://i.pravatar.cc/300",
-      "observations": [
-        {
-          "id": "1",
-          "text": "Ótimo desempenho nas aulas de educação física.",
-          "favorite": false
-        }
-      ]
+      "imgSrc": "https://i.pravatar.cc/300"
     },
     {
       "id": "8",
       "name": "Beatriz Almeida",
       "classId": "2",
-      "imgSrc": "https://i.pravatar.cc/300",
-      "observations": [
-        {
-          "id": "1",
-          "text": "Muito criativa na resolução de problemas.",
-          "favorite": true
-        }
-      ]
+      "imgSrc": "https://i.pravatar.cc/300"
     },
     {
       "id": "9",
       "name": "Matheus Lima",
       "classId": "3",
-      "imgSrc": "https://i.pravatar.cc/300",
-      "observations": [
-        {
-          "id": "1",
-          "text": "Sempre ajuda os colegas com as tarefas.",
-          "favorite": true
-        }
-      ]
+      "imgSrc": "https://i.pravatar.cc/300"
     },
     {
       "id": "10",
       "name": "Letícia Fernandes",
       "classId": "1",
-      "imgSrc": "https://i.pravatar.cc/300",
-      "observations": [
-        {
-          "id": "1",
-          "text": "Evoluiu significativamente em ciências.",
-          "favorite": true
-        }
-      ]
+      "imgSrc": "https://i.pravatar.cc/300"
     }
   ],
   "observations": [
     {
+      "id": "49cf",
       "studentId": "1",
       "text": "Uma descricao bonitinha",
-      "favorite": false,
-      "id": "dfb1"
+      "favorite": false
     },
     {
-      "studentId": "1",
-      "text": "Uma descricao bonitinha",
-      "favorite": false,
-      "id": "185e"
-    },
-    {
-      "studentId": "1",
-      "text": "Uma descricao bonitinha",
-      "favorite": true,
-      "id": "b118"
-    },
-    {
-      "id": "45d8",
+      "id": "717f",
       "studentId": "1",
       "text": "Uma descricao bonitinha",
       "favorite": false
