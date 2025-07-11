@@ -15,12 +15,14 @@ export default function ClassNavigationBar() {
         <IconButton
           icon={<FeatherIcon name='search' size={24} color={COLORS.dark} />}
           variant='ghost'
+          disabled
         />
         <IconButton
           icon={
             <FeatherIcon name='more-horizontal' size={24} color={COLORS.dark} />
           }
           variant='ghost'
+          disabled
         />
       </View>
     </View>

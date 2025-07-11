@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { useState } from 'react'
 import { useWindowDimensions } from 'react-native'
 import { SceneMap, TabView } from 'react-native-tab-view'
 import ClassMockTabView from './ClassMockTabView'
@@ -23,7 +23,7 @@ const routes = [
 
 export default function ClassTabView() {
   const layout = useWindowDimensions()
-  const [index, setIndex] = React.useState(0)
+  const [index, setIndex] = useState(0)
 
   return (
     <TabView
