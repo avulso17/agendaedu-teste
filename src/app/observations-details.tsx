@@ -1,5 +1,5 @@
-import ClassObsDetails from '@/features/class/components/observations/details'
+import ObsDetails from '@/features/observations/components/ObsDetails'
 
 export default function ObservationsDetails() {
-  return <ClassObsDetails />
+  return <ObsDetails />
 }

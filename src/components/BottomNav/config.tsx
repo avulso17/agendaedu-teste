@@ -11,6 +11,7 @@ export const BOTTOM_NAV_CONFIG = [
     name: 'favorites',
     icon: <FeatherIcon name='heart' size={24} color={COLORS.dark} />,
     route: 'favorites',
+    disabled: true,
   },
   {
     name: 'profile',

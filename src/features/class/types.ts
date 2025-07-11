@@ -1,8 +1,4 @@
-export type Observation = {
-  id: string
-  text: string
-  favorite: boolean
-}
+import { Observation } from '../observations/types'
 
 export type Student = {
   id: string

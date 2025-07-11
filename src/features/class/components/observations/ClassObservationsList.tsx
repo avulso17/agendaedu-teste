@@ -7,7 +7,7 @@ import ClassObservationsCard from './ClassObservationsCard'
 export default function ClassObservationsList() {
   const { id } = useLocalSearchParams<{ id: string }>()
   const queryClient = useQueryClient()
-  const students = queryClient.getQueryData<Student[]>(['students', Number(id)])
+  const students = queryClient.getQueryData<Student[]>(['students', id])
 
   if (!students)
     return <Text className='text-center pt-5'>Ops... Algo deu errado</Text>
