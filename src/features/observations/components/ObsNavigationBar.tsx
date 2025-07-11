@@ -2,11 +2,12 @@ import BackButton from '@/components/BackButton'
 import IconButton from '@/components/IconButton'
 import { COLORS } from '@/styles/colors'
 import { Feather } from '@expo/vector-icons'
+import { useLocalSearchParams, useRouter } from 'expo-router'
 import { SafeAreaView, Text, View } from 'react-native'
-import { useCreateObservation } from '../hooks/useCreateObservation'
 
 export default function ObsNavigationBar() {
-  const createObservation = useCreateObservation('1')
+  const { studentId } = useLocalSearchParams<{ studentId: string }>()
+  const router = useRouter()
 
   return (
     <SafeAreaView className='bg-white border-b border-grey-200'>
@@ -21,7 +22,7 @@ export default function ObsNavigationBar() {
           <IconButton
             icon={<Feather name='plus' size={24} color={COLORS.dark} />}
             variant='ghost'
-            onPress={() => createObservation.mutate('Uma descricao bonitinha')}
+            onPress={() => router.push(`/observations/${studentId}/create`)}
           />
           <IconButton
             icon={
